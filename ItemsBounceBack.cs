@@ -8,7 +8,7 @@ using Steamworks.Ugc;
 
 namespace ItemsBounceBack
 {
-    [BepInPlugin("SeroRonin.ItemsBounceBack", "ItemsBounceBack", "1.1.0")]
+    [BepInPlugin("SeroRonin.ItemsBounceBack", "ItemsBounceBack", "1.2.0")]
     [BepInDependency(REPOLib.MyPluginInfo.PLUGIN_GUID, BepInDependency.DependencyFlags.HardDependency)]
     public class ItemsBounceBack : BaseUnityPlugin
     {
@@ -82,7 +82,7 @@ namespace ItemsBounceBack
                 // These item types should not bounce by default, individual entries can be overriden by developers in their own code
                 var shouldBounce = ( !(item.itemType == SemiFunc.itemType.item_upgrade) && !(item.itemType == SemiFunc.itemType.cart) && !(item.itemType == SemiFunc.itemType.pocket_cart) );
 
-                TryAddBounceEntry(item.itemAssetName, shouldBounce, false);
+                TryAddBounceEntry(item.name, shouldBounce, false);
             }
         }
     }
