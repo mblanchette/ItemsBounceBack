@@ -1,10 +1,10 @@
 {
-  "name": "ItemsBounceBack",
+  "name": "ItemsBounceBack_Updated",
   "description": "Makes equippable items bounce out of hurt/kill boxes!",
   "version_number": "1.2.0",
   "dependencies": [
     "Zehs-REPOLib-3.0.1",
     "BepInEx-BepInExPack-5.4.2100"
   ],
-  "website_url": "https://github.com/SeroRonin/ItemsBounceBack"
+  "website_url": "https://github.com/mblanchette/ItemsBounceBack"
 }
